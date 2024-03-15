@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"
+        android:onClick="abrirSumar"
+        android:text="Sumar" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        android:onClick="abrirRestar"
+        android:layout_below="@id/btnSumar"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:onClick="abrirMultiplicar"
+        android:layout_below="@id/btnRestar"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:onClick="abrirDividir"
+        android:layout_below="@id/btnMultiplicar"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+    <Button
+        android:id="@+id/btnPotencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Potencia"
+        android:onClick="abrirPotencia"
+        android:layout_below="@id/btnDividir"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+    <Button
+        android:id="@+id/btnFibonacci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fibonacci"
+        android:onClick="abrirFibonacci"
+        android:layout_below="@id/btnPotencia"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+    <Button
+        android:id="@+id/btnFactorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorial"
+        android:onClick="abrirFactorial"
+        android:layout_below="@id/btnFibonacci"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#433F3F"/>
+
+</RelativeLayout>
+

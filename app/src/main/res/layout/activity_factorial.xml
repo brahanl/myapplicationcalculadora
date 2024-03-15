@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FactorialActivity">
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un número"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCalcularFactorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNumero"
+        android:layout_marginTop="16dp"
+        android:text="Calcular Factorial"
+        android:onClick="calcularFactorial"
+        android:backgroundTint="#433F3F"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcularFactorial"
+        android:layout_marginTop="16dp"
+        android:text="Resultado"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultado"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="508dp"
+        android:onClick="volverPaginaPrincipal"
+        android:text="Volver a la página principal"
+        android:backgroundTint="#433F3F"/>
+</RelativeLayout>

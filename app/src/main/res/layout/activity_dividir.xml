@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DividirActivity">
+
+    <EditText
+        android:id="@+id/etDividendo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dividendo"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etDivisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDividendo"
+        android:layout_marginTop="16dp"
+        android:hint="Divisor"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnCalcularDivision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDivisor"
+        android:layout_marginTop="16dp"
+        android:text="Calcular División"
+        android:onClick="calcularDivision"
+        android:backgroundTint="#433F3F"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcularDivision"
+        android:layout_marginTop="16dp"
+        android:text="Resultado"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultado"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="419dp"
+        android:onClick="volverPaginaPrincipal"
+        android:text="Volver a la página principal"
+        android:backgroundTint="#433F3F"/>
+</RelativeLayout>
